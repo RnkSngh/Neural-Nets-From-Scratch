@@ -7,8 +7,8 @@ My original intention for doing this was to build some intution around neural ne
 1.  This dependence of the activation of right nodes on left nodes is also what would make calculating gradients using finite differences very inefficient. Perturbing the value of the cost function for each paramater to estimate the derivative with respect to each paramater will impact the value for all values downstream of the neuron. This is also what makes automatic differentiation a much more useful technique in computing the gradients. I initially wanted to experiment with using wacky, noncontinuous activation functions (i.e. some arbitray piece of code which maps numbers using a programmatic function rather than a mathematical function), but this ended up being too computationally intensive to implement. 
 1.  Cost functions do not need to be convex even though gradient descent is being used. Training relies on [a large number of paramaters to "wiggle" the cost function value out of local minima](https://www.quora.com/Are-neural-nets-always-convex-with-respect-to-the-weights-And-if-not-how-does-gradient-descent-work-so-well). The more paramaters there are in a neural net, the less likely it is to get stuck on a point where the gradient writh respect to *all* paramaters is 0. This limits the practical applications of this notebook, as you might need more complex nets than are specified in this notebook to overcome the non-convexity. 
 
-# Structure
-Neural_Net.ipynb contains all of the methods to visualize and train the neural net in the first cell. There is also some sample code in the second notebook cell where an example neural net is constructed and trained. 
+# Notebooik Structure
+Neural Net.ipynb contains all of the methods to visualize and train the neural net in the first cell. There is also some sample code in the second notebook cell where an example neural net is constructed and trained. 
 
 
 
